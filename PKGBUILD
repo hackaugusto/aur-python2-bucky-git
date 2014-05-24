@@ -1,14 +1,14 @@
 # Maintainer: Augusto F. Hack <hack.augusto@gmail.com>
 pkgname=python2-bucky-git
 pkgver=2.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Bucky is a small server for collecting and translating metrics for Graphite."
 arch=(any)
 url="https://github.com/trbs/bucky"
 license=('apache')
 depends=('python2' 'python2-watchdog' 'python2-setproctitle')
 optdepends=('collectd' 'statsd-git' 'python2-txstatsd')
-makedepends=('git')
+makedepends=('git' 'python2')
 options=(!emptydirs)
 source=('bucky::git+https://github.com/trbs/bucky.git')
 md5sums=('SKIP')
